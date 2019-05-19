@@ -5,7 +5,6 @@ gem 'sqlite3'
 gemspec
 gem 'bundler'
 gem 'aws-sdk', '~> 3'
-gem 'aws-sdk-core'
 gem 'rspec', '~> 3.4'
 gem 'dotenv'
 gem 'fuubar'
