@@ -28,6 +28,7 @@ module ActiveElasticJob
 
     def generate_digest(message)
       require 'openssl' unless defined?(OpenSSL)
+      raise "stuff is: #{@secret.inspect}"
       OpenSSL::HMAC.hexdigest(OpenSSL::Digest::SHA1.new, @secret, message)
     end
   end

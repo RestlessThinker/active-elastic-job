@@ -195,7 +195,6 @@ module ActiveJob
 
         def message_digest(messsage_body)
           @verifier ||= ActiveElasticJob::MessageVerifier.new(secret_key_base)
-          raise messsage_body.inspect
           @verifier.generate_digest(messsage_body)
         end
 
